@@ -56,7 +56,7 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,6 +123,6 @@ STATIC_URL = '/static/'
 
 
 # 添加media的URL和ROOT
-MEDIA_URL = '/meida/'
+MEDIA_URL = '/media/'
 # 新建meida文件夹，在project的根目录下
-MEdIA_ROOT = os.path.join(BASE_DIR, 'meida')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

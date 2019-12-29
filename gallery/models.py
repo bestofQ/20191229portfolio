@@ -6,5 +6,8 @@ from django.db import models
 class Gallery(models.Model):
 	description = models.CharField(default='作品描述', max_length=100)
 	title = models.CharField(default='作品标题', max_length=50)
+	# image = models.ImageField(default='default.jpg', upload_to='images/')
 	image = models.ImageField(default='default.jpg', upload_to='images/')
-		
+	
+	def __str__(self):
+		return self.title
