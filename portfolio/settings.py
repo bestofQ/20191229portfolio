@@ -120,3 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# 添加media的URL和ROOT
+MEDIA_URL = '/meida/'
+# 新建meida文件夹，在project的根目录下
+MEdIA_ROOT = os.path.join('BASE_DIR', 'meida')
